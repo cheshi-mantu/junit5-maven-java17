@@ -21,7 +21,6 @@ on:
 env:
   ALLURE_RESULTS: "target/allure-results"
   ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
-  ALLURE_PROJECT_ID: 338
 
 jobs:
   all-tests:

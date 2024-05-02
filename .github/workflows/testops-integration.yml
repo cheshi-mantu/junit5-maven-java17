@@ -38,8 +38,8 @@ jobs:
         with:
           allure-endpoint: https://demo.testops.cloud
           allure-token: ${{ secrets.ALLURE_TOKEN }}
-          allure-project-id: ${{ env.ALLURE_PROJECT_ID }}
-      - name: Build with Gradle
+          allure-project-id: 2087
+      - name: Build with maven wrapper
         run: |
           allurectl watch -- ./mvnw clean test
           printenv | grep TEST_

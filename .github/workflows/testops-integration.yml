@@ -40,6 +40,7 @@ jobs:
       - name: Build with maven wrapper
         run: |
           allurectl watch -- ./mvnw clean test
+          export $(allurectl job-run env)
           printenv | grep TEST_
           printenv | grep ALLURE_
         env:

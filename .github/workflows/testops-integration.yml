@@ -36,7 +36,7 @@ jobs:
         with:
           allure-endpoint: https://demo.testops.cloud
           allure-token: ${{ secrets.ALLURE_TOKEN }}
-          allure-project-id: 2087
+          allure-project-id: 2154
       - name: Build with maven wrapper
         run: |
           allurectl watch -- ./mvnw clean test
